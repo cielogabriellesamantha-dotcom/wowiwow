@@ -1,0 +1,330 @@
+body {
+    background-color: #D8E2F0;
+    font-family: Arial;
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+#header {
+    background-color: #243B53;
+    width: 90%;
+    max-width: 700px;
+    border-radius: 15px;
+    margin: 20px auto;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+h1 {
+    color: white;
+    font-family: Arial Black;
+    font-size: 38px;
+    margin-bottom: 2px;
+}
+
+h2 {
+    color: #A9C5DF;
+    font-family: Arial;
+    font-size: 18px;
+    margin-top: 0px;
+}
+
+section {
+    background-color: #FFFFFF;
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid #A9C5DF;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+section h2 {
+    color: #243B53;
+    font-size: 28px;
+    text-align: center;
+}
+
+.road {
+    width: 100%;
+    max-width: 800px;
+    height: 300px;
+    background-color: #555;
+    margin: 30px auto;
+    position: relative;
+    border: 3px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.traffic-light {
+    background-color: #1B1F21;
+    width: 70px;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    z-index: 1;
+    border: 2px solid black;
+}
+
+.light {
+    width: 40px;
+    height: 40px;
+    background-color: gray;
+    margin: 8px auto;
+    border-radius: 50%;
+}
+
+.road-line {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: 50%;
+    background-color: white;
+}
+
+.vehicle {
+    position: absolute;
+    font-size: 100px;
+    z-index: 2;
+}
+
+.car {
+    top: 10px;
+    left: 40%;
+}
+
+.motorcycle {
+    top: 150px;
+    left: 65%;
+}
+
+#back {
+    background-color: #A9C5DF;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 650px;
+    padding: 15px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 12px 25px;
+    margin: 8px;
+    font-family: Arial;
+    font-size: 18px;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.stop-btn {
+    background-color: #D50032;
+    color: white;
+    border: 2px solid #99001F;
+}
+
+.stop-btn:hover {
+    background-color: #FF1744;
+    transform: rotate(-4deg) scale(1.1);
+}
+
+.wait-btn {
+    background-color: #FF8F00;
+    color: black;
+    border: 2px solid #B36B00;
+}
+
+.wait-btn:hover {
+    background-color: #FFB300;
+    transform: rotate(-4deg) scale(1.1);
+}
+
+.go-btn {
+    background-color: #009624;
+    color: white;
+    border: 2px solid #006B2B;
+}
+
+.go-btn:hover {
+    background-color: #00C853;
+    transform: rotate(-4deg) scale(1.1);
+}
+
+.reset-btn {
+    background-color: #0D47A1;
+    color: white;
+    border: 2px solid #003A99;
+}
+
+.reset-btn:hover {
+    background-color: #2979FF;
+    transform: rotate(-4deg) scale(1.1);
+}
+
+#message {
+    color: #243B53;
+    margin: 20px;
+}
+
+
+.form-title {
+    color: #243B53;
+    font-family: Arial;
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+form {
+    padding: 30px;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 650px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    border: 2px solid #A9C5DF;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+
+label {
+    display: block;
+    color: #334E68;
+    font-family: Arial;
+    font-size: 17px;
+    margin-top: 12px;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #BCCCDC;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.submit {
+    background-color: #008C95;
+    color: white;
+    padding: 13px;
+    width: 45%;
+    border: 1px solid blue;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.submit:hover {
+    background-color: #006B73;
+    transform: scale(1.05);
+}
+
+.button-container {
+    text-align: center;
+}
+
+#registrationResult {
+    width: 100%;
+    max-width: 650px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #D8E2F0;
+    color: #243B53;
+    border-radius: 10px;
+    text-align: left;
+    white-space: pre-line;
+    display: none;
+    line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    #header {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    section {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .road {
+        height: 260px;
+    }
+
+    .traffic-light {
+        width: 55px;
+        padding: 5px;
+        left: 10px;
+        top: 10px;
+    }
+
+    .light {
+        width: 30px;
+        height: 30px;
+        margin: 7px auto;
+    }
+
+    .vehicle {
+        font-size: 60px;
+    }
+
+    .car {
+        top: 25px;
+        left: 36%;
+    }
+
+    .motorcycle {
+        top: 140px;
+        left: 60%;
+    }
+
+    #back {
+        width: 100%;
+        padding: 8px;
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    form {
+        padding: 18px;
+    }
+
+    .form-title {
+        font-size: 23px;
+    }
+
+    .submit {
+        width: 80%;
+    }
+}

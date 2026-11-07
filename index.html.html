@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>MINI TRAFFIC SIMULATOR</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="icon"  type="image/jpeg" href="C:\Users\Samantha\Desktop\index.html\Traffic Light\traffic/wow.jpg">
+    </head>
+
+
+<body>
+    
+    <div id="header">
+    <h1>Traffic Intersection</h1>
+    <h2>MINI TRAFFIC SIMULATOR</h2>
+    </div>
+
+    <section>
+    <h2>Traffic Intersection</h2>
+
+    <div class="road">
+
+        <div class="traffic-light">
+            <div id="redLight" class="light"></div>
+            <div id="yellowLight" class="light"></div>
+            <div id="greenLight" class="light"></div>
+        </div>
+
+    <div class="road-line"></div>
+    <div class="vehicle car">🚗</div>
+    <div class="vehicle motorcycle">🏍️</div>
+    
+    </div>
+    
+    <div id="back">
+    <div class="buttons">
+    <button class="stop-btn" onclick="stopLight()">STOP</button>
+    <button class="wait-btn" onclick="readyLight()">WAIT</button>
+    <button class="go-btn" onclick="goLight()">GO</button>
+    <button class="reset-btn" onclick="resetLight()">RESET</button>
+</div>
+
+</div>
+<h2 id="message">WAITING FOR INPUT...</h2>
+
+</section>
+
+<hr>
+
+     <h1 class="form-title">Vehicle Registration Form</h1>
+    <form>
+    <label for="name"><b>Driver's Name:</b></label><br>
+    <input type="text" id="name" name="name" placeholder="Enter your full name">
+    
+    <br><br>
+    
+    <label for="vtype"><b>Vehicle Type:</b></label><br>
+
+    <select id="type" name="types">
+    <option>Car</option>
+    <option> Motorcycle</option>
+    <option> Bus</option>
+    <option>Truck</option>
+    </select>
+    
+    <br><br>
+    
+    <label for="desti"><b> Destination:</b></label><br>
+
+    <select id="type" name="types">
+    <option>North</option>
+    <option> South</option>
+    <option> East</option>
+    <option>West</option>
+    </select>
+  
+<label for="purpose"><b>Purpose of Travel:</b></label><br>
+
+    <select id="purpose" name="purposes">
+        <option>Personal</option>
+        <option>School</option>
+        <option>Business</option>
+    </select>
+
+    <div class="button-container">
+    <input type="submit" value="REGISTER" class="submit">
+</div>
+
+    
+    </form>
+    </body>
+    </html>
